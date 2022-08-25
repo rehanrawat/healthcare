@@ -569,8 +569,8 @@
 
                 <label for="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Office Address *</label>
 
-                <input id="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="email" required="required"
-                    type="email" value="" placeholder="" data-rule-required="true"
+                <input id="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="text" required="required" type="text"
+                    value="" placeholder="" data-rule-required="true"
                     data-msg-required="Please enter a valid email address.">
                 <span class="error1" style="display: none;">
                     <i class="error-log fa fa-exclamation-triangle"></i>
@@ -633,7 +633,7 @@
                     <i class="error-log fa fa-exclamation-triangle"></i>
                 </span>
             </div>
-            <div class="hs_email field hs-form-field hs_total_number_of_constituents_in_your_database">
+            <div class="hs_email field hs-form-field ">
 
                 <label
                     for="edit-submitted-constituent-base-total-constituents total_number_of_constituents_in_your_database-99a6d115-5e68-4355-a7d0-529207feb0b3_6344">Mobile
@@ -651,8 +651,8 @@
 
                 <label for="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983"> Address *</label>
 
-                <input id="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="email" required="required"
-                    type="email" value="" placeholder="" data-rule-required="true"
+                <input id="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="text" required="required" type="text"
+                    value="" placeholder="" data-rule-required="true"
                     data-msg-required="Please enter a valid email address.">
                 <span class="error1" style="display: none;">
                     <i class="error-log fa fa-exclamation-triangle"></i>
@@ -664,48 +664,75 @@
 
         <fieldset>
             <h2 class="fs-title">Recipe (Rx)</h2>
-            <div class="form-item webform-component webform-component-textfield hs_average_gift_size_in_year_1 field hs-form-field"
-                id="edit-submitted-cultivation-amount-1 average_gift_size_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">
+            <div class="row">
+                <div class="columns large-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Medicine <br />Name</th>
+                                <th>Type<br /></th>
+                                <th>Signatura <br /> (Sig)</th>
+                                <th>
+                                    Instructions
+                                    <br />
+                                    (Disp)
+                                </th>
+                                <th align="center">Rf
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="dynamic" id="pda-details">
+                            <tr>
+                                <td>
+                                    <input class="dyn-input" type="text" id="activity_date[1]"
+                                        name="activity_date[1]" />
+                                </td>
+                                <td>
+                                    <label for="annual_eval[1]">
+                                        <input type="checkbox" id="annual_eval[1]" name="annual_eval[1]"
+                                            class="dyn-input" />
+                                        &nbsp;
+                                        Tablet
+                                    </label>
 
-                <label
-                    for="edit-submitted-cultivation-amount-1 average_gift_size_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">What
-                    was your average gift size in year 1? *</label>
+                                    <label for="prog_rev[1]">
+                                        <input type="checkbox" id="prog_rev[1]" name="prog_rev[1]" class="dyn-input" />
+                                        &nbsp;
+                                        Syrup
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="dyn-input" type="text" id="total_hours[1]" name="total_hours[1]" />
+                                </td>
+                                <td>
+                                    <input class="dyn-input" type="text" id="activity_date[1]"
+                                        name="activity_date[1]" />
+                                </td>
+                                <td>
+                                    <label for="dev_plan_yes[1]">
+                                        <input type="radio" id="dev_plan_yes[1]" class="dyn-input" name="dev_plan[1]"
+                                            value="yes" />
+                                        &nbsp; Yes
+                                    </label>
+                                    <label for="dev_plan_no[1]">
+                                        <input type="radio" id="dev_plan_no[1]" class="dyn-input" name="dev_plan[1]"
+                                            value="no" />
+                                        &nbsp; No
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <input id="edit-submitted-cultivation-amount-1" class="form-text hs-input"
-                    name="average_gift_size_in_year_1" required="required" size="60" maxlength="128" type="number"
-                    value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-                <span class="error1" style="display: none;">
-                    <i class="error-log fa fa-exclamation-triangle"></i>
-                </span>
-            </div>
-            <div class="form-item webform-component webform-component-textfield hs_average_gift_size_in_year_2 field hs-form-field"
-                id="webform-component-cultivation--amount-2">
-
-                <label
-                    for="edit-submitted-cultivation-amount-2 average_gift_size_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">What
-                    was your average gift size in year 2? *</label>
-
-                <input id="edit-submitted-cultivation-amount-2" class="form-text hs-input"
-                    name="average_gift_size_in_year_2" required="required" size="60" maxlength="128" type="number"
-                    value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-                <span class="error1" style="display: none;">
-                    <i class="error-log fa fa-exclamation-triangle"></i>
-                </span>
-            </div>
-            <div class="form-item webform-component webform-component-textfield webform-container-inline hs_average_gift_size_percent_change field hs-form-field"
-                id="webform-component-cultivation--percent-change1">
-
-                <label
-                    for="edit-submitted-cultivation-percent-change1 average_gift_size_percent_change-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">Average
-                    Gift Size Percent Change</label>
-
-                <input id="edit-submitted-cultivation-percent-change1" class="form-text hs-input"
-                    name="average_gift_size_percent_change" readonly="readonly" size="60" maxlength="128" type="text"
-                    value="" placeholder="0">
+                    <button class="button tiny secondary" data-table="pda-details" id="add-row">
+                        Add Row
+                    </button>
+                </div>
             </div>
             <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
             <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
         </fieldset>
+
 
 
         <fieldset>
@@ -840,6 +867,59 @@
     }
     var modules = { $window: $(window), $html: $('html'), $body: $('body'), $container: $('.container'), init: function () { $(function () { modules.modals.init(); }); }, modals: { trigger: $('.explanation'), modal: $('.modal'), scrollTopPosition: null, init: function () { var self = this; if (self.trigger.length > 0 && self.modal.length > 0) { modules.$body.append('<div class="modal-overlay"></div>'); self.triggers(); } }, triggers: function () { var self = this; self.trigger.on('click', function (e) { e.preventDefault(); var $trigger = $(this); self.openModal($trigger, $trigger.data('modalId')); }); $('.modal-overlay').on('click', function (e) { e.preventDefault(); self.closeModal(); }); modules.$body.on('keydown', function (e) { if (e.keyCode === 27) { self.closeModal(); } }); $('.modal-close').on('click', function (e) { e.preventDefault(); self.closeModal(); }); }, openModal: function (_trigger, _modalId) { var self = this, scrollTopPosition = modules.$window.scrollTop(), $targetModal = $('#' + _modalId); self.scrollTopPosition = scrollTopPosition; modules.$html.addClass('modal-show').attr('data-modal-effect', $targetModal.data('modal-effect')); $targetModal.addClass('modal-show'); modules.$container.scrollTop(scrollTopPosition); }, closeModal: function () { var self = this; $('.modal-show').removeClass('modal-show'); modules.$html.removeClass('modal-show').removeAttr('data-modal-effect'); modules.$window.scrollTop(self.scrollTopPosition); } } }
     modules.init();
+
+
+
+    (function () {
+        var add_row;
+
+        $('#add-row').on('click', function (e) {
+            var table_body;
+            e.preventDefault();
+            table_body = $(e.target).data().table;
+            if (table_body) {
+                return add_row(table_body);
+            }
+        });
+
+        add_row = function (table_body_element) {
+            var $cloner, $new_row, $rows, $tbody, count, inputs;
+            // Get some variables for the tbody and the row to clone.
+            $tbody = $('#' + table_body_element);
+            $rows = $($tbody.children('tr'));
+            $cloner = $rows.eq(0);
+            count = $rows.length;
+            // Clone the row and get an array of the inputs.
+            $new_row = $cloner.clone();
+            inputs = $new_row.find('.dyn-input');
+            // Change the name and id for each input.
+            $.each(inputs, function (i, v) {
+                var $input, $label, checked;
+                $input = $(v);
+                // Find the label for input and adjust it.
+                $label = $new_row.find(`label[for='${$input.attr('id')}']`);
+                $label.attr({
+                    'for': $input.attr('id').replace(/\[.*\]/, `[${count + 1}]`)
+                });
+                $input.attr({
+                    'name': $input.attr('name').replace(/\[.*\]/, `[${count + 1}]`),
+                    'id': $input.attr('id').replace(/\[.*\]/, `[${count + 1}]`)
+                });
+                // Remove values and checks.
+                $input.val('');
+                checked = $input.prop('checked');
+                if (checked) {
+                    return $input.prop('checked', false);
+                }
+            });
+            // Add the new row to the tbody.
+            return $tbody.append($new_row);
+        };
+
+    }).call(this);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7QUFBQSxNQUFBOztFQUFBLENBQUEsQ0FBRSxVQUFGLENBQWEsQ0FBQyxFQUFkLENBQWlCLE9BQWpCLEVBQTBCLFFBQUEsQ0FBQyxDQUFELENBQUE7QUFDMUIsUUFBQTtJQUFFLENBQUMsQ0FBQyxjQUFGLENBQUE7SUFDQSxVQUFBLEdBQWEsQ0FBQSxDQUFFLENBQUMsQ0FBQyxNQUFKLENBQVcsQ0FBQyxJQUFaLENBQUEsQ0FBa0IsQ0FBQztJQUNoQyxJQUFHLFVBQUg7YUFDRSxPQUFBLENBQVEsVUFBUixFQURGOztFQUh3QixDQUExQjs7RUFNQSxPQUFBLEdBQVUsUUFBQSxDQUFDLGtCQUFELENBQUE7QUFDVixRQUFBLE9BQUEsRUFBQSxRQUFBLEVBQUEsS0FBQSxFQUFBLE1BQUEsRUFBQSxLQUFBLEVBQUEsTUFBQTs7SUFDRSxNQUFBLEdBQVMsQ0FBQSxDQUFFLEdBQUEsR0FBTSxrQkFBUjtJQUNULEtBQUEsR0FBUSxDQUFBLENBQUUsTUFBTSxDQUFDLFFBQVAsQ0FBZ0IsSUFBaEIsQ0FBRjtJQUNSLE9BQUEsR0FBVSxLQUFLLENBQUMsRUFBTixDQUFTLENBQVQ7SUFDVixLQUFBLEdBQVEsS0FBSyxDQUFDLE9BSmhCOztJQU9FLFFBQUEsR0FBVyxPQUFPLENBQUMsS0FBUixDQUFBO0lBQ1gsTUFBQSxHQUFTLFFBQVEsQ0FBQyxJQUFULENBQWMsWUFBZCxFQVJYOztJQVdFLENBQUMsQ0FBQyxJQUFGLENBQU8sTUFBUCxFQUFlLFFBQUEsQ0FBQyxDQUFELEVBQUksQ0FBSixDQUFBO0FBQ2pCLFVBQUEsTUFBQSxFQUFBLE1BQUEsRUFBQTtNQUFJLE1BQUEsR0FBUyxDQUFBLENBQUUsQ0FBRixFQUFiOztNQUdJLE1BQUEsR0FBUyxRQUFRLENBQUMsSUFBVCxDQUFjLENBQUEsV0FBQSxDQUFBLENBQWMsTUFBTSxDQUFDLElBQVAsQ0FBWSxJQUFaLENBQWQsQ0FBQSxFQUFBLENBQWQ7TUFDVCxNQUFNLENBQUMsSUFBUCxDQUFhO1FBQUMsS0FBQSxFQUFPLE1BQU0sQ0FBQyxJQUFQLENBQVksSUFBWixDQUFpQixDQUFDLE9BQWxCLENBQTBCLFFBQTFCLEVBQW9DLENBQUEsQ0FBQSxDQUFBLENBQUksS0FBQSxHQUFRLENBQVosQ0FBQSxDQUFBLENBQXBDO01BQVIsQ0FBYjtNQUVBLE1BQU0sQ0FBQyxJQUFQLENBQVk7UUFDVixNQUFBLEVBQVEsTUFBTSxDQUFDLElBQVAsQ0FBWSxNQUFaLENBQW1CLENBQUMsT0FBcEIsQ0FBNEIsUUFBNUIsRUFBc0MsQ0FBQSxDQUFBLENBQUEsQ0FBSSxLQUFBLEdBQVEsQ0FBWixDQUFBLENBQUEsQ0FBdEMsQ0FERTtRQUVWLElBQUEsRUFBTSxNQUFNLENBQUMsSUFBUCxDQUFZLElBQVosQ0FBaUIsQ0FBQyxPQUFsQixDQUEwQixRQUExQixFQUFvQyxDQUFBLENBQUEsQ0FBQSxDQUFJLEtBQUEsR0FBUSxDQUFaLENBQUEsQ0FBQSxDQUFwQztNQUZJLENBQVosRUFOSjs7TUFZSSxNQUFNLENBQUMsR0FBUCxDQUFXLEVBQVg7TUFDQSxPQUFBLEdBQVUsTUFBTSxDQUFDLElBQVAsQ0FBWSxTQUFaO01BQ1YsSUFBRyxPQUFIO2VBQ0UsTUFBTSxDQUFDLElBQVAsQ0FBWSxTQUFaLEVBQXVCLEtBQXZCLEVBREY7O0lBZmEsQ0FBZixFQVhGOztXQStCRSxNQUFNLENBQUMsTUFBUCxDQUFjLFFBQWQ7RUFoQ1E7QUFOViIsInNvdXJjZXNDb250ZW50IjpbIiAgXG4kKCcjYWRkLXJvdycpLm9uICdjbGljaycsIChlKSAtPlxuICBlLnByZXZlbnREZWZhdWx0KClcbiAgdGFibGVfYm9keSA9ICQoZS50YXJnZXQpLmRhdGEoKS50YWJsZVxuICBpZiB0YWJsZV9ib2R5XG4gICAgYWRkX3Jvdyh0YWJsZV9ib2R5KVxuXG5hZGRfcm93ID0gKHRhYmxlX2JvZHlfZWxlbWVudCkgLT5cbiMgR2V0IHNvbWUgdmFyaWFibGVzIGZvciB0aGUgdGJvZHkgYW5kIHRoZSByb3cgdG8gY2xvbmUuXG4gICR0Ym9keSA9ICQoJyMnICsgdGFibGVfYm9keV9lbGVtZW50KVxuICAkcm93cyA9ICQoJHRib2R5LmNoaWxkcmVuKCd0cicpKVxuICAkY2xvbmVyID0gJHJvd3MuZXEoMClcbiAgY291bnQgPSAkcm93cy5sZW5ndGhcblxuICAjIENsb25lIHRoZSByb3cgYW5kIGdldCBhbiBhcnJheSBvZiB0aGUgaW5wdXRzLlxuICAkbmV3X3JvdyA9ICRjbG9uZXIuY2xvbmUoKVxuICBpbnB1dHMgPSAkbmV3X3Jvdy5maW5kKCcuZHluLWlucHV0JylcblxuICAjIENoYW5nZSB0aGUgbmFtZSBhbmQgaWQgZm9yIGVhY2ggaW5wdXQuXG4gICQuZWFjaChpbnB1dHMsIChpLCB2KSAtPlxuICAgICRpbnB1dCA9ICQodilcblxuICAgICMgRmluZCB0aGUgbGFiZWwgZm9yIGlucHV0IGFuZCBhZGp1c3QgaXQuXG4gICAgJGxhYmVsID0gJG5ld19yb3cuZmluZChcImxhYmVsW2Zvcj0nI3skaW5wdXQuYXR0cignaWQnKX0nXVwiKVxuICAgICRsYWJlbC5hdHRyKCB7J2Zvcic6ICRpbnB1dC5hdHRyKCdpZCcpLnJlcGxhY2UoL1xcWy4qXFxdLywgXCJbI3tjb3VudCArIDF9XVwiKX0gKVxuXG4gICAgJGlucHV0LmF0dHIoe1xuICAgICAgJ25hbWUnOiAkaW5wdXQuYXR0cignbmFtZScpLnJlcGxhY2UoL1xcWy4qXFxdLywgXCJbI3tjb3VudCArIDF9XVwiKSxcbiAgICAgICdpZCc6ICRpbnB1dC5hdHRyKCdpZCcpLnJlcGxhY2UoL1xcWy4qXFxdLywgXCJbI3tjb3VudCArIDF9XVwiKVxuICAgIH0pXG5cbiAgICAjIFJlbW92ZSB2YWx1ZXMgYW5kIGNoZWNrcy5cbiAgICAkaW5wdXQudmFsKCcnKVxuICAgIGNoZWNrZWQgPSAkaW5wdXQucHJvcCgnY2hlY2tlZCcpXG4gICAgaWYgY2hlY2tlZFxuICAgICAgJGlucHV0LnByb3AoJ2NoZWNrZWQnLCBmYWxzZSlcbiAgKVxuXG4gICMgQWRkIHRoZSBuZXcgcm93IHRvIHRoZSB0Ym9keS5cbiAgJHRib2R5LmFwcGVuZCgkbmV3X3JvdykiXX0=
+//# sourceURL=coffeescript
 </script>
 
 </html>
